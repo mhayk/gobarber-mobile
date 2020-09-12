@@ -13,6 +13,7 @@ import { useNavigation } from '@react-navigation/native';
 import { Form } from '@unform/mobile';
 import { FormHandles } from '@unform/core';
 import * as Yup from 'yup';
+import api from '../../services/api';
 
 import getValidationErros from '../../utils/getValidationErros';
 
@@ -57,9 +58,14 @@ const SignUp: React.FC = () => {
           abortEarly: false,
         });
 
-        // await api.post('/users', data);
+        await api.post('/users', data);
 
-        // history.push('/');
+        Alert.alert(
+          'Your account has been created sucessfully',
+          'You can login now!'
+          );
+
+        navigation.navigate('SignIn')
 
         // addToast({
         //   type: 'success',
