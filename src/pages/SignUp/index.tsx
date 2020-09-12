@@ -84,7 +84,7 @@ const SignUp: React.FC = () => {
         'An error happened during the customer registration, try again.');
       }
     },
-    [],
+    [navigation],
   );
 
 
