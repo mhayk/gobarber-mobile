@@ -70,7 +70,7 @@ export const ProviderInfo = styled.View`
   margin-left: 30px;
 `;
 export const ProviderName = styled.Text`
-  font-family: 'RobotoSlab-Medium'
+  font-family: 'RobotoSlab-Medium';
   font-size: 18px;
   color: #f4ede8;
 `;
