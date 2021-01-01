@@ -18,6 +18,10 @@ export const Header = styled.View`
   justify-content: space-between;
   align-items: center;
 `;
+
+// Help us with to debug via React DevTools .. flipper ..
+Header.displayName = 'DashboardHeader'
+
 export const HeaderTitle = styled.Text`
   color: #f4ede8;
   font-size: 20px;
@@ -26,7 +30,7 @@ export const HeaderTitle = styled.Text`
 `;
 export const UserName = styled.Text`
   color: #ff9000;
-  font-family: 'RobotoSlab-Medium'
+  font-family: 'RobotoSlab-Medium';
 `;
 
 export const ProfileButton = styled.TouchableOpacity``;
@@ -45,7 +49,7 @@ export const ProvidersListTitle = styled.Text`
   font-size: 24px;
   margin-bottom: 24px;
   color: #f4ede8;
-  font-family: 'RobotoSlab-Medium'
+  font-family: 'RobotoSlab-Medium';
 `;
 
 export const ProviderContainer = styled(RectButton)`
